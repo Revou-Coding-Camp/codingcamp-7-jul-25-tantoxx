@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo - Kristanto</title>
-
+    <title>To-Do List App - Kristanto</title>
+    
     <!-- CSS External -->
      <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Hero Website -->
-    <header>
-        <h1>Todo List</h1>
-    </header>
+    <div class="container">
+        <h1>To-Do List App</h1>
 
-    <main></main>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a new task" required />
+            <input type="date" id="todo-date" required />
 
-    <footer>
-        <span>&copy; 2025 Kristanto. All rights reserved.</span>
-    </footer>
+            <button type="submit">+</button>
+        </form>
+
+        <div class="filter-container">
+            <button id="filter-button">Filter</button>
+            <input type="date" id="filter-date" />
+
+            <button id="delete-all">Delete All</button>
+        </div>
+
+        <ul id="todo-list"></ul>
+        
+        <footer>&copy; 2025 Kristanto. All Rights Reserved</footer>
+    </div>
+
+
+
+    <!-- JS External -->
+    <script src="js/script.js"></script>
 </body>
 </html>
